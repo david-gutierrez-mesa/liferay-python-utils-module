@@ -2,7 +2,7 @@
 Python utils to interact with Liferay systems.
 
 To use it, type the following command in your project root:
-> git submodule add https://github.com/david-gutierrez-mesa/liferay-python-utils-module.git
+> git submodule add https://github.com/david-gutierrez-mesa/liferay-python-utils-module.git utils
 
 After this, a new folder called utils will appear in your project. You need to commit it with your code.
 
