@@ -35,6 +35,7 @@ class Strings:
 
 class IssueTypes:
     Design_Task = 'Design task'
+    Technical_Task = 'Technical Task'
     Technical_Testing = 'Technical Testing'
     Testing = 'Testing'
 

@@ -29,6 +29,10 @@ def __initialize_subtask_design_task(story, summary, description=''):
     return __initialize_subtask(story, [], summary, IssueTypes.Design_Task, description)
 
 
+def __initialize_subtask_technical_task(story, components, summary, description=''):
+    return __initialize_subtask(story, components, summary, IssueTypes.Technical_Task, description)
+
+
 def __initialize_subtask_technical_test(story, components, summary, description=''):
     return __initialize_subtask(story, components, summary, IssueTypes.Technical_Testing, description)
 
@@ -193,6 +197,13 @@ def initialize_subtask_front_end(story, components):
     return subtask_test_creation
 
 
+def initialize_subtask_patch_release(story, summary):
+    components = [{'name': 'Release'}]
+    description = LIFERAY_JIRA_BROWSE_URL + summary
+    subtask_test_validation = __initialize_subtask_technical_task(story, components, summary, description)
+    return subtask_test_validation
+
+
 def initialize_subtask_test_creation(story, components, description):
     subtask_test_creation = __initialize_subtask_technical_test(story, components,
                                                                 Strings.subtask_test_creation_summary, description)
@@ -238,6 +249,10 @@ def line_strip(line):
     line = line.replace(' \n', '\n')
     line = line.replace('\n\n', '\n')
     return line
+
+
+def link_to_issue(issue):
+    return LIFERAY_JIRA_BROWSE_URL + issue.key
 
 
 def prepare_test_creation_subtask(story):
