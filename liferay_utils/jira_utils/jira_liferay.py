@@ -1,6 +1,6 @@
 from jira import JIRA
 
-from liferay_utils.jira.jira_constants import Instance
+from liferay_utils.jira_utils.jira_constants import Instance
 from liferay_utils.manageCredentialsCrypto import get_credentials
 
 
