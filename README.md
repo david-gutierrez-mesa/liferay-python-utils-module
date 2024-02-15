@@ -9,5 +9,5 @@ After this, a new folder called utils will appear in your project. You need to c
 
 To use any function inside this module you need to import it as in this example:
 ```python
-from utils.liferay_utils.jira.jira_liferay import get_jira_connection
+from utils.liferay_utils.jira_utils.jira_liferay import get_jira_connection
 ```

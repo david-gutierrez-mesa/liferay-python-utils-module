@@ -2,7 +2,7 @@ import json
 import requests
 from requests.auth import HTTPBasicAuth
 
-from liferay_utils.jira.jira_constants import CustomField, Status, Instance, Transition, Strings, IssueTypes
+from liferay_utils.jira_utils.jira_constants import CustomField, Status, Instance, Transition, Strings, IssueTypes
 from liferay_utils.manageCredentialsCrypto import get_credentials
 
 AUTOMATION_TABLE_HEADER = '||Test Scenarios||Test Strategy||Kind of test||Is it covered by FrontEnd ? (' \

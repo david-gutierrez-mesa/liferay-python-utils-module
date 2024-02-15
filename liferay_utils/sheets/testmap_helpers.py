@@ -2,8 +2,8 @@ from itertools import islice
 
 from liferay_utils.sheets.sheets_constants import SheetInstance
 from liferay_utils.sheets.sheets_helpers import *
-from liferay_utils.jira.jira_helpers import get_all_issues
-from liferay_utils.jira.jira_constants import CustomField, Instance
+from liferay_utils.jira_utils.jira_helpers import get_all_issues
+from liferay_utils.jira_utils.jira_constants import CustomField, Instance
 
 
 def _get_field_list(story, field):
