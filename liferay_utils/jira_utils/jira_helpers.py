@@ -198,10 +198,8 @@ def initialize_subtask_front_end(story, components):
 
 
 def initialize_subtask_patch_release(story, summary):
-    components = [{'name': 'Release'}]
     description = LIFERAY_JIRA_BROWSE_URL + summary
-    subtask_test_validation = __initialize_subtask_technical_task(story, components, summary + ' - Validation',
-                                                                  description)
+    subtask_test_validation = __initialize_subtask_technical_task(story, '', summary + ' - Validation', description)
     return subtask_test_validation
 
 
