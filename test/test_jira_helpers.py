@@ -11,8 +11,7 @@ class EchoTestMapTests(unittest.TestCase):
             expected = {'project': {'key': 'LPD'}, 'summary': 'LPD-15582 - Validation',
                         'description': 'https://liferay.atlassian.net/browse/LPD-15582',
                         'issuetype': {'name': 'Technical Task'},
-                        'parent': {'id': '1038479'},
-                        'components': [{'name': 'Release'}]}
+                        'parent': {'id': '1038479'}}
             jira = get_jira_connection()
             parent_lps = jira.issue('LPD-16987', fields='id')
             summary = 'LPD-15582'
