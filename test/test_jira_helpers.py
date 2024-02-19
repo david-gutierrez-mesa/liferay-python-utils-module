@@ -8,7 +8,7 @@ class EchoTestMapTests(unittest.TestCase):
 
     def test_initialize_subtask_patch_release(self):
         try:
-            expected = {'project': {'key': 'LPD'}, 'summary': 'LPD-15582',
+            expected = {'project': {'key': 'LPD'}, 'summary': 'LPD-15582 - Validation',
                         'description': 'https://liferay.atlassian.net/browse/LPD-15582',
                         'issuetype': {'name': 'Technical Task'},
                         'parent': {'id': '1038479'},
