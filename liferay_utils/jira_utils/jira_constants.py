@@ -43,5 +43,6 @@ class IssueTypes:
 class Transition:
     Closed = 'Closed'
     In_Testing = 'In Testing'
+    In_Progress = 'In Progress'
     Ready_for_Product_Review = 'Ready for Product Review'
     Selected_for_development = 'Selected for Development'
